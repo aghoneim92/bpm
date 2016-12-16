@@ -1,0 +1,1 @@
+{"plugins":["plugin-transform-class-properties","plugin-transform-es2015-modules-umd"],"presets":["preset-react","preset-latest","preset-stage-0"]}

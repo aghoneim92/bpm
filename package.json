@@ -1,0 +1,49 @@
+{
+  "name": "babel-package-manager",
+  "version": "1.0.2",
+  "description": "BPM: Babel Package Manager - Automagically install babel presets/plugins and save to both package.json and .eslintrc",
+  "bin": "bin/bpm.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aghoneim92/bpm.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "transform",
+    "package",
+    "packages",
+    "manager"
+  ],
+  "author": "Ahmed Ghoneim <ahmed_ghoneim92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aghoneim92/bpm/issues"
+  },
+  "homepage": "https://github.com/aghoneim92/bpm#readme",
+  "dependencies": {
+    "align-text": "^0.1.4",
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2",
+    "command-line-args": "^3.0.4",
+    "commander": "^2.9.0",
+    "pretty-error": "2.0.2",
+    "ramda": "0.22.1",
+    "right-align": "^0.1.3",
+    "update-notifier": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "6.19.0",
+    "babel-plugin-transform-es2015-modules-umd": "6.18.0",
+    "babel-preset-latest": "6.16.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
