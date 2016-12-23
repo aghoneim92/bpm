@@ -23,7 +23,7 @@ const commands = [{
   name: 'jsdoc',
 }, {
   cmd: BRANCH === 'master' ?
-          `git checkout master && git commit -m "added jsdoc and coverage - Travis Build#${TRAVIS_BUILD_ID}" && git push deploy master`
+          `git checkout -b gh-doc && git commit -m "added jsdoc and coverage - Travis Build#${TRAVIS_BUILD_ID}" && git push deploy gh-doc`
         : '',
   name: 'git-push',
 }]

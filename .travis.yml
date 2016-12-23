@@ -10,13 +10,13 @@ addons:
     packages:
       - g++-4.8
 script:
+  - git reset --hard
   - npm run gulp-task publish-coverage
   - npm run gulp-task jsdoc
   - eval "$(ssh-agent -s)" #start the ssh agent
   - git config user.email "ahmedghoneim92@gmail.com"
   - git config user.name "Ahmed Ghoneim"
   - git remote add deploy git@github.com:aghoneim92/bpm.git
-  - git reset --hard
   - git add -f jsdoc coverage
   - chmod 600 .travis/id_rsa
   - ssh-add .travis/id_rsa
