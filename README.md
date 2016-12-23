@@ -2,6 +2,7 @@
 Babel Package Manager
 
 Automagically install babel presets/plugins and save to both package.json and .eslintrc
+
 ## Usage
 ```
 yarn global add babel-package-manager
