@@ -17,6 +17,6 @@ module.exports = {
     'no-var': 'error',
     'no-return-assign': 0,
     'operator-linebreak': 0,
-    'no-extend-native': 0,
+    'camelcase': 0,
   },
 }

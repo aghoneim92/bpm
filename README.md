@@ -1,11 +1,11 @@
-# bpm <img src="https://travis-ci.org/aghoneim92/bpm.svg?branch=master"/>
+# bpm <img src="https://travis-ci.org/aghoneim92/bpm.svg?branch=master"/> [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://coveralls.io/github/aghoneim92/bpm?branch=master)
 Babel Package Manager
 
 Automagically install babel presets/plugins and save to both package.json and .eslintrc
 
 ## Usage
 
-### Cli
+### CLI
 ```bash
 yarn global add babel-package-manager
 -- or --
@@ -19,6 +19,8 @@ bpm un --presets es2015 --plugins-syntax flow
 ```
 
 ###API
+> see [jsdoc](https://raw.githubusercontent.com/aghoneim92/bpm/tree/master/jsdoc/index.html)
+
 ```javascript
 const bpm = require('babel-package-manager')
 bpm({
@@ -35,7 +37,7 @@ bpm({
 ```
 
 ## License
-MIT - See LICENSE.md
+MIT - See [LICENSE.md](https://github.com/aghoneim92/bpm/blob/master/LICENSE.md)
 
 ## Author
 Ahmed Ghoneim <ahmedghoneim92@gmail.com>
