@@ -1,7 +1,8 @@
 {
   "name": "babel-package-manager",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "BPM: Babel Package Manager - Automagically install babel presets/plugins and save to both package.json and .eslintrc",
+  "main": "index.js",
   "bin": "bin/bpm.js",
   "scripts": {
     "test": "mocha --require babel-register --require lib/__tests__/root.js **/__tests__/*.js",
@@ -36,6 +37,7 @@
     "update-notifier": "1.0.3"
   },
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-umd": "^6.18.0",
     "babel-preset-env": "^1.1.4",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
