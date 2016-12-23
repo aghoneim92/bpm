@@ -1,4 +1,4 @@
-# bpm
+# bpm <img src="https://travis-ci.org/aghoneim92/bpm.svg?branch=master"/>
 Babel Package Manager
 
 Automagically install babel presets/plugins and save to both package.json and .eslintrc
