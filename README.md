@@ -1,4 +1,4 @@
-# bpm [![Build Status](https://travis-ci.org/aghoneim92/bpm.svg?branch=master)](https://travis-ci.org/aghoneim92/bpm) [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://coveralls.io/github/aghoneim92/bpm?branch=master)
+# bpm [![Build Status](https://travis-ci.org/aghoneim92/bpm.svg?branch=master)](https://travis-ci.org/aghoneim92/bpm) [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://coveralls.io/github/aghoneim92/bpm?branch=master) [![npm](https://img.shields.io/npm/dm/babel-package-manager.svg)]() [![npm](https://img.shields.io/npm/dt/babel-package-manager.svg)]() [![npm](https://img.shields.io/npm/l/babel-package-manager.svg)]() [![GitHub contributors](https://img.shields.io/github/contributors/aghoneim92/bpm.svg)]() [![David](https://img.shields.io/david/aghoneim92/bpm.svg)]() [![David](https://img.shields.io/david/dev/aghoneim92/bpm.svg)]() [![Issue Stats](https://img.shields.io/issuestats/i/github/aghoneim92/bpm.svg)]() [![Issue Stats](https://img.shields.io/issuestats/p/github/aghoneim92/bpm.svg)]()
 
 Babel Package Manager
 
