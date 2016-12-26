@@ -1,4 +1,4 @@
-# bpm <img src="https://travis-ci.org/aghoneim92/bpm.svg?branch=master"/> [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://coveralls.io/github/aghoneim92/bpm?branch=master)
+# bpm <img src="https://travis-ci.org/aghoneim92/bpm.svg?branch=master"/> [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://raw.githubusercontent.com/aghoneim92/bpm/tree/docs/coverage/lcov-report/index.html)
 Babel Package Manager
 
 Automagically install babel presets/plugins and save to both package.json and .eslintrc
@@ -19,7 +19,7 @@ bpm un --presets es2015 --plugins-syntax flow
 ```
 
 ###API
-> see [jsdoc](https://raw.githubusercontent.com/aghoneim92/bpm/tree/master/jsdoc/index.html)
+> see [jsdoc](https://raw.githubusercontent.com/aghoneim92/bpm/tree/docs/jsdoc/index.html)
 
 ```javascript
 const bpm = require('babel-package-manager')

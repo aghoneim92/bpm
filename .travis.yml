@@ -17,7 +17,11 @@ script:
   - git config user.email "ahmedghoneim92@gmail.com"
   - git config user.name "Ahmed Ghoneim"
   - git remote add deploy git@github.com:aghoneim92/bpm.git
-  - git add -f jsdoc coverage
+  - rm -rvf docs
+  - mkdir docs
+  - mv jsdoc docs
+  - mv coverage docs
+  - git add -f docs
   - chmod 600 .travis/id_rsa
   - ssh-add .travis/id_rsa
   - npm run gulp-task git-push
