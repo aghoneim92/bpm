@@ -1,4 +1,5 @@
-# bpm <img src="https://travis-ci.org/aghoneim92/bpm.svg?branch=master"/> [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://raw.githubusercontent.com/aghoneim92/bpm/tree/docs/coverage/lcov-report/index.html)
+# bpm [![Build Status](https://travis-ci.org/aghoneim92/bpm.svg?branch=master)](https://travis-ci.org/aghoneim92/bpm) [![Coverage Status](https://coveralls.io/repos/github/aghoneim92/bpm/badge.svg?branch=master)](https://coveralls.io/github/aghoneim92/bpm?branch=master)
+
 Babel Package Manager
 
 Automagically install babel presets/plugins and save to both package.json and .eslintrc
