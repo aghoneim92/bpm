@@ -4,7 +4,7 @@ const child_process = require('child_process')
 const {
   env: {
     TRAVIS_BRANCH,
-    TRAVIS_BUILD_ID,
+    TRAVIS_BUILD_ID: BUILD_ID,
     TRAVIS_PULL_REQUEST_BRANCH,
   },
 } = process
@@ -23,7 +23,10 @@ const commands = [{
   name: 'jsdoc',
 }, {
   cmd: BRANCH === 'master' ?
-          `git checkout -b docs-${TRAVIS_BUILD_ID} && git commit -m "added jsdoc and coverage report to docs\n- Travis Build#${TRAVIS_BUILD_ID}" && git push deploy docs`
+          `git checkout -b docs-${BUILD_ID}
+        && git commit -m "added jsdoc and coverage report to docs
+          - Travis Build#${BUILD_ID}"
+        && git push deploy docs-${BUILD_ID}`
         : '',
   name: 'git-push',
 }]
