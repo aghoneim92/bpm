@@ -4,6 +4,8 @@ Babel Package Manager
 
 Automagically install babel presets/plugins and save to both package.json and .eslintrc
 
+** NEW ** Support for Yarn 📦🐈
+
 ## Usage
 
 ### CLI
@@ -14,8 +16,8 @@ npm i -g babel-package-manager
 
 alias bpm='babel-package-manager'
 bpm install --presets latest stage-0 react
-bpm i --plugins transform-es2015-modules-umd --presets latest
-bpm i --plugins-transform class-properties --pluginx-syntax flow
+BABEL_RC=./configs/.babelrc bpm i --plugins transform-es2015-modules-umd --presets latest
+YARN=false bpm i --plugins-transform class-properties --plugins-syntax flow
 bpm un --presets es2015 --plugins-syntax flow
 ```
 
