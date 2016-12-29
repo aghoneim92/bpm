@@ -24,7 +24,7 @@ const commands = [{
 }, {
   cmd: BRANCH === 'master' ?
           `git commit -m "added jsdoc and coverage report to docs
-- Travis Build [#${BUILD_ID}](https://travis-ci.org/aghoneim92/bpm/builds/${BUILD_ID})" && git push deploy docs --force`
+- Travis Build [#${BUILD_ID}](https://travis-ci.org/aghoneim92/bpm/builds/${BUILD_ID})" && git push deploy gh-pages --force`
         : '',
   name: 'git-push',
 }]
