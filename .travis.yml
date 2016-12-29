@@ -22,8 +22,7 @@ script:
   - mv jsdoc docs
   - mv coverage docs
   - git add -f docs
-  - git branch -D docs || true
-  - git checkout -b docs
+  - git checkout -b gh-pages
   - chmod 600 .travis/id_rsa
   - ssh-add .travis/id_rsa
   - npm run gulp-task git-push
