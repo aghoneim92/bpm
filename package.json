@@ -6,7 +6,7 @@
   "bin": "bin/bpm.js",
   "scripts": {
     "gulp-task": "gulp",
-    "test": "mocha --require babel-register --require lib/__tests__/root.js **/__tests__/*.js",
+    "test": "mocha --require lib/__tests__/root.js **/__tests__/*.js",
     "tdd": "npm test -- --watch"
   },
   "repository": {
