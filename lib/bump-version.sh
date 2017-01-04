@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 node lib/bump-version $1
 git checkout -b bump-version
 git add --all
