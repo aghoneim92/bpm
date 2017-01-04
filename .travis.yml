@@ -26,3 +26,4 @@ script:
   - chmod 600 .travis/id_rsa
   - ssh-add .travis/id_rsa
   - npm run gulp-task git-push
+  - npm run gulp-task npm-publish #if master and new version

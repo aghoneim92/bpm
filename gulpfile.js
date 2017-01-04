@@ -1,5 +1,7 @@
 const gulp = require('gulp')
 const child_process = require('child_process')
+const { version } = require('./package.json')
+const { readFileSync } = require('fs')
 
 const {
   env: {
@@ -27,6 +29,23 @@ const commands = [{
 - Travis Build [#${BUILD_ID}](https://travis-ci.org/aghoneim92/bpm/builds/${BUILD_ID})" && git push deploy gh-pages --force`
         : '',
   name: 'git-push',
+}, {
+  cmd: 'npm view babel-package-manager version > ./version',
+  name: 'npm-version',
+}, {
+  cmd: cb => {
+    if (BRANCH === 'master') {
+      const npmVersion = Number(readFileSync('./version').toString().trim())
+      if (version > npmVersion) {
+        execCmd({
+          name: 'npm-publish',
+          cmd: 'npm publish',
+        })(cb)
+      }
+    }
+  },
+  name: 'npm-publish',
+  deps: ['npm-version'],
 }]
 
 const standardCb = (name, cb) =>
@@ -39,11 +58,18 @@ const standardCb = (name, cb) =>
     }
   }
 
-commands.forEach(
-  ({ cmd, deps, name }) => gulp.task(
-    name, deps, cb => child_process.exec(
-      cmd,
-      standardCb(name, cb)
-    )
+const execCmd = ({ cmd, name }) =>
+  cb =>
+    typeof cmd === 'function' ?
+      cmd(cb)
+    : child_process.exec(
+        cmd,
+        standardCb(name, cb)
+      )
+
+const makeTask = ({ cmd, deps, name }) =>
+  gulp.task(
+    name, deps, execCmd({ cmd, name })
   )
-)
+
+commands.forEach(makeTask)
