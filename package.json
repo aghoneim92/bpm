@@ -1,6 +1,6 @@
 {
   "name": "babel-package-manager",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "BPM: Babel Package Manager - Automagically install babel presets/plugins and save to both package.json and .eslintrc",
   "main": "index.js",
   "bin": "bin/bpm.js",
@@ -9,23 +9,11 @@
     "test": "mocha --require lib/__tests__/root.js **/__tests__/*.js",
     "tdd": "npm test -- --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aghoneim92/bpm.git"
-  },
-  "keywords": [
-    "babel",
-    "plugin",
-    "transform",
-    "package",
-    "packages",
-    "manager"
-  ],
+  "repository": { "type": "git", "url": "git+https://github.com/aghoneim92/bpm.git" },
+  "keywords": [ "babel", "plugin", "transform", "package", "packages", "manager" ],
   "author": "Ahmed Ghoneim <ahmed_ghoneim92@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aghoneim92/bpm/issues"
-  },
+  "bugs": { "url": "https://github.com/aghoneim92/bpm/issues" },
   "homepage": "https://github.com/aghoneim92/bpm#readme",
   "dependencies": {
     "bluebird": "3.4.6",
@@ -52,6 +40,7 @@
     "istanbul": "^0.4.5",
     "jscover": "^1.0.0",
     "jsdoc": "^3.4.3",
+    "json-beautify": "^1.0.1",
     "minimatch": "^3.0.3",
     "mocha": "^3.2.0",
     "mocha-istanbul": "^0.3.0",
