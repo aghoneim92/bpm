@@ -46,6 +46,9 @@ const commands = [{
   },
   name: 'npm-publish',
   deps: ['npm-version'],
+}, {
+  name: 'bump-version',
+  cmd: 'lib/bump-version.sh',
 }]
 
 const standardCb = (name, cb) =>
