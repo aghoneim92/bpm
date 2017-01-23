@@ -2,7 +2,7 @@
   "name": "babel-package-manager",
   "description": "BPM: Babel Package Manager - Automagically install babel presets/plugins and save to both package.json and .eslintrc",
   "main": "index.js",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "bin": "bin/bpm.js",
   "scripts": {
     "gulp-task": "gulp",
